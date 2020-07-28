@@ -1,0 +1,10 @@
+name:  'Repo Lister'
+description: 'Output repo and branches as a yaml file'
+outputs:
+  repo-yaml:
+    description: 'The output from the repo-lister'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+
