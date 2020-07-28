@@ -4,4 +4,4 @@ RUN apk update && \
     apk add --no-cache unzip
 
 COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
