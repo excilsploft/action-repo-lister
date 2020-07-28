@@ -5,5 +5,5 @@ wget --no-check-certificate --content-disposition  https://github.com/excilsplof
 
 unzip ${BIN_DOWNLOAD}
 
-repo_yaml=$(./repol)
+repo_yaml=$(/repol)
 echo "::set-output name=repo_yaml::$repo_yaml"
