@@ -1,7 +1,7 @@
-FROM alpine:3.10
-RUN apk update && \
-    apk add --no-cache wget  && \
-    apk add --no-cache unzip
+FROM debian:10-slim
+RUN apt update -y && \
+    apt install -y wget  && \
+    apt install -y unzip
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
